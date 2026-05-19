@@ -44,13 +44,31 @@
 >
 > [Same body.]
 
-## Variant C — opener test (number-led)
+## Variant C — ROI Clarity (Hard-hitting)
 
-> 7 retry loops × 4,200 tokens × $15/1M output = $0.44.
+> **"Let me try a different approach."**
 >
-> Do that 200x/month and you're paying $88 for the same lesson your agent never learned. Here's the audit.
+> That one sentence just cost you $0.44.
 >
-> [Same body.]
+> 7 retry loops × 4,200 tokens × $15/1M output.
+>
+> Do that 200x a month across your team and you’re paying $88 for the exact same lesson your agent never learned. 
+>
+> Your AI bill is bleeding from "The Repeat Tax."
+>
+> I built a free Grok Skill that stops the guesswork and audits your bill for these repeat-offender patterns.
+>
+> → **`/ai-bill-auditor`**
+>
+> Paste your last week of Cursor / Claude Code / Codex transcripts. It returns:
+>
+> • Top patterns with estimated monthly $ leak
+> • The one-line prevention rule to skip the repeat
+> • Total monthly $ recoverable
+>
+> Runs in Grok (web/iOS/Android). Zero install.
+>
+> Block the patterns permanently: **thumbgate.ai**
 
 ---
 
