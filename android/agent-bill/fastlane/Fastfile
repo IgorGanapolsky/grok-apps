@@ -7,7 +7,7 @@ platform :android do
   desc "Upload AAB to internal track"
   lane :internal do
     upload_to_play_store(
-      package_name: "com.tacticaltrainingapps.agentbill",
+      package_name: "com.iganapolsky.agentbill",
       track: "internal",
       aab: "app/build/outputs/bundle/release/app-release.aab",
       skip_upload_metadata: true,
@@ -20,7 +20,7 @@ platform :android do
   desc "Upload AAB to closed (alpha) testing track"
   lane :closed do
     upload_to_play_store(
-      package_name: "com.tacticaltrainingapps.agentbill",
+      package_name: "com.iganapolsky.agentbill",
       track: "alpha",
       aab: "app/build/outputs/bundle/release/app-release.aab",
       skip_upload_metadata: true,
@@ -32,7 +32,7 @@ platform :android do
   desc "Promote internal to production"
   lane :promote do
     upload_to_play_store(
-      package_name: "com.tacticaltrainingapps.agentbill",
+      package_name: "com.iganapolsky.agentbill",
       track: "internal",
       track_promote_to: "production",
       skip_upload_apk: true,
