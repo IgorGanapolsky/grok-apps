@@ -12,7 +12,7 @@
 - **Social Launch:** Updated all announcement drafts to feature the `npx thumbgate audit` command.
 
 ## Leads
-- New leads found: 12
+- New leads found: 52
 - Messages sent: 3
 - Replies: 0
 - Positive replies: 0

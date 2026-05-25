@@ -48,7 +48,12 @@ private fun AppNav() {
                 onSettings = { nav.navigate(Routes.Settings) },
             )
         }
-        composable(Routes.Audit) { AuditScreen(onBack = { nav.popBackStack() }) }
+        composable(Routes.Audit) {
+            AuditScreen(
+                onBack = { nav.popBackStack() },
+                onNavigateToSettings = { nav.navigate(Routes.Settings) }
+            )
+        }
         composable(Routes.Settings) { SettingsScreen(onBack = { nav.popBackStack() }) }
     }
 }

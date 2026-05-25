@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-19T16:02:19.345141",
+  "data_science_metrics": {
+    "total_leads": 52,
+    "pipeline_velocity": {
+      "Sent": 21,
+      "Sergio - TackleAI's focus on unstructured data automation is impressive. I've built an OSS gate to intercept tool calls and prevent agent 'infinite loops' in those workflows.": 1,
+      "Targeted": 30
+    },
+    "conversion_probability": "0.00% (Insufficient Data)"
+  },
+  "current_bottleneck": "Distribution & Conversion Validation",
+  "recommended_action": "Scale outbound volume to 100 leads to achieve statistical significance before optimizing ML models."
+}

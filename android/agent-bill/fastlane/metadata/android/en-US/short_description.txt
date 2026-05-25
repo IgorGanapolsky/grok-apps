@@ -1,1 +1,1 @@
-Audit your AI coding bill. Find the patterns your agent keeps repeating.
+Audit your AI coding bills, session logs, and CI transcripts on the go.

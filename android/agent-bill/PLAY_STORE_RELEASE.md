@@ -89,10 +89,10 @@ Upload path B — browser automation via your authenticated Chrome Canary:
 # 2. From a separate terminal:
 cd android/agent-bill
 node upload-to-playstore.js \
-  --app-url "https://play.google.com/console/u/0/developers/<DEV_ID>/app/<APP_ID>/tracks/<TRACK_ID>"
+  --app-url "https://play.google.com/console/u/0/developers/5569424694437250668/app/4974052329761927376/tracks/internal"
 ```
 
-Replace `<DEV_ID>`, `<APP_ID>`, `<TRACK_ID>` with the IDs from the URL after the app exists.
+Replace `internal` with the track ID if different.
 
 ## First-revenue path (realistic)
 

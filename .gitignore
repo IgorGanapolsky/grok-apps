@@ -23,4 +23,4 @@ android/*/fastlane/README.md
 # Throwaway screenshots taken during this session
 play-console-state.png
 *.png
-!android/agent-bill/**/*.png
+!android/Agent-Bill/**/*.png

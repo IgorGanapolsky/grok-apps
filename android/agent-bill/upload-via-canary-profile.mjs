@@ -67,30 +67,22 @@ if (!existsSync(CANARY_PROFILE)) {
   process.exit(1);
 }
 
-// If Canary is currently running, copy the profile to a temp dir so we don't
-// fight over the lock file. (Mac Chrome won't open the same profile twice.)
-let canaryRunning = false;
+// Check if Canary is currently running
 try {
   execSync(`pgrep -f "Google Chrome Canary"`, { stdio: "ignore" });
-  canaryRunning = true;
+  console.error("ERROR: Google Chrome Canary is already running. Please close it before running this script to use the live profile directly.");
+  process.exit(1);
 } catch {
-  canaryRunning = false;
+  // Not running
 }
 
-let profileDir = CANARY_PROFILE;
-if (canaryRunning) {
-  const tmp = mkdtempSync(join(tmpdir(), "canary-profile-"));
-  console.log(`[upload] Canary is running → copying profile to ${tmp}`);
-  cpSync(CANARY_PROFILE, tmp, { recursive: true, dereference: false });
-  profileDir = tmp;
-}
-
-console.log(`[upload] launching headed Chrome Canary with profile ${profileDir}`);
-const ctx = await chromium.launchPersistentContext(profileDir, {
+console.log(`[upload] launching headed Chrome Canary with profile ${CANARY_PROFILE}`);
+const ctx = await chromium.launchPersistentContext(CANARY_PROFILE, {
   headless: false,
   executablePath: CANARY_BIN,
   viewport: { width: 1440, height: 900 },
-  args: ["--no-first-run", "--no-default-browser-check"],
+  ignoreDefaultArgs: ["--enable-automation"],
+  args: ["--disable-blink-features=AutomationControlled"],
 });
 
 const page = ctx.pages()[0] || (await ctx.newPage());
